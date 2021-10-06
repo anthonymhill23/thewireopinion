@@ -1,11 +1,26 @@
-body { background-color: rgb(122, 122, 133);}
-display: flex;
-
-  p {
+body { background-color: rgb(122, 122, 133);
+    display: block;
       text-align: center;
       text-indent: 3%;
+      width: 100%;
   }
 
   header {
       text-align: center;
   }
+
+  div {
+      text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }  
+  img {
+     margin: auto;   
+     display: block;
+     width: 50%;
+  }
+/* .pictures     {
+    position: relative;
+} */
