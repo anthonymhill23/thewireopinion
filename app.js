@@ -15,28 +15,28 @@ document.write( '<img id="walkoff"  src= "' + url +'">')
 
 
 function wireappreciationgame(){
-let userAnswer = prompt ('How many times must you watch the wire all the way through to finally get the greatness of it?');
+
 let url = 'https://media4.giphy.com/media/IBFjeoZ5Oewhi/200.gif'
 let correctAnswer = 1;
 let attempts = 3;
-
-for(let i = 0; i < attempts; i++){
-     console.log(i)
-     while(userAnswer > 2 ){
-
-          userAnswer = prompt ('Nah');
-     }
+let count = 1
+// loop through attempt
+// as you loop through attempts, declare user answer prompts
+// check if user answer is correct, if not correct, continue
+// if correct, continue logic
+for(let i = 1; i <= attempts; i++){
+ let userAnswer = prompt ('How many times must you watch the wire all the way through to finally get the greatness of it? 1-5 times');
 if(userAnswer == correctAnswer){
-     alert('A man gotta have a code and you cracked it!!');
-     break;
-}else if(userAnswer > correctAnswer && i !=3){
+alert('A man gotta have a code and you cracked it');
+break;}
+else  { alert ('nah'); count ++ }
 
-     alert('The game is the game,and you lost')
-     break;
 
-     } 
-     }
+}if (count > 3) 
+alert('The game is the game and you just lost!')
+
 }
+  
 
 
 
