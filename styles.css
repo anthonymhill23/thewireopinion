@@ -1,4 +1,4 @@
-body { background-color: rgb(126, 126, 184);
+body { background-color:grey;
     display: block;
       text-align: center;
       text-indent: 3%;
@@ -18,5 +18,11 @@ body { background-color: rgb(126, 126, 184);
   img {
      margin: auto;   
      display: block;
-     width: 50%;
+     width: 35%;
   }
+#gif {
+
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
